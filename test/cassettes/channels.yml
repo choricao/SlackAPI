@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=<SLACK_TOKEN>&channel=CAGCPB64A&text=test%20message&username=Gost&icon_emoji=%3Aghost%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 02 May 2018 17:18:59 GMT
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Oauth-Scopes:
+      - read,client,identify,post,apps
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      X-Xss-Protection:
+      - '0'
+      X-Slack-Req-Id:
+      - 28633c4b-2a68-48b9-a76b-68083a1ed94d
+      X-Slack-Backend:
+      - h
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-npmn
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 413d2e3bdeb6f699636082654a2a0175.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - npPBuP8k0BbTzZObNkbdc_RMlLkyqAoGFT4XTkGZaBTKlJLYnam1aQ==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CAGCPB64A","ts":"1525281539.000264","message":{"text":"test
+        message","username":"Gost","icons":{"emoji":":ghost:","image_64":"https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f47b.png"},"bot_id":"BAGK5RG9G","type":"message","subtype":"bot_message","ts":"1525281539.000264"}}'
+    http_version: 
+  recorded_at: Wed, 02 May 2018 17:18:59 GMT
+recorded_with: VCR 4.0.0
