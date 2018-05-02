@@ -64,4 +64,67 @@ http_interactions:
         message","username":"Gost","icons":{"emoji":":ghost:","image_64":"https:\/\/a.slack-edge.com\/37d58\/img\/emoji_2017_12_06\/apple\/1f47b.png"},"bot_id":"BAGK5RG9G","type":"message","subtype":"bot_message","ts":"1525281539.000264"}}'
     http_version: 
   recorded_at: Wed, 02 May 2018 17:18:59 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=<SLACK_TOKEN>&channel=this-channel-does-not-exist&text=test%20message&username=Gost&icon_emoji=%3Aghost%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 02 May 2018 17:34:06 GMT
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Oauth-Scopes:
+      - read,client,identify,post,apps
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      X-Xss-Protection:
+      - '0'
+      X-Slack-Req-Id:
+      - 05630a84-5768-4ce6-afec-1973f79171cb
+      X-Slack-Backend:
+      - h
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-yh67
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 17de248e6d780f737234d37cc490dbe3.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - A7WLx1MhI2Csk6oejVfzoe8S1UvQFF7hR2u1ViNFLsnoIWn0j_E6_A==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: 
+  recorded_at: Wed, 02 May 2018 17:34:05 GMT
 recorded_with: VCR 4.0.0
